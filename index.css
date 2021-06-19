@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    background: #ffffff;
+}
+
+.bt{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+.show{
+    display: block;
+}
+
