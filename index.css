@@ -3,8 +3,46 @@
     padding: 0;
 }
 
+li{
+    list-style: none;
+}
+
+.icon {
+    width: 1.2em; height: 1.2em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin: 0 14px;
+ }
+
+ .icon:hover{
+     cursor: pointer;
+ }
+
+.icons{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+   
+    transition: all 0.3s;
+}
+
+.icons .active{
+    fill: red;
+    transform: scale(1.5);
+}
+
+
+body{
+    overflow: hidden;
+}
+
 #canvas {
     background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .bt{
@@ -17,3 +55,66 @@
     display: block;
 }
 
+.colors{
+    position: fixed;
+    top: 50px;
+    left: 10px;
+}
+
+.colors li{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin: 16px 0;
+    box-shadow: 0px 0px 6px 0px rgba(59, 50, 50, 0.91);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.colors .red{
+    background: red;
+}
+.colors .green{
+    background: green;
+}
+.colors .yellow{
+    background: yellow;
+}
+
+.colors .black{
+    background: black;
+}
+
+.colors .active{
+    transform: scale(1.4);
+}
+
+.line {
+    position:fixed;
+    right: 0;
+    top: 0;
+}
+
+.line div{
+    margin: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.line .thick {
+    width: 30px;
+    height: 10px;
+    background: #000;
+}
+
+.line .thin {
+    width: 30px;
+    height: 5px;
+    background: #000;
+}
+
+.line .active{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 6px 0px rgba(59, 50, 50, 0.91);
+    border: 1px solid gray;
+}
